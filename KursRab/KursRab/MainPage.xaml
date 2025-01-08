@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:KursRab"
+             x:Class="KursRab.MainPage">
+
+    <StackLayout> 
+        <Label Text="Добро пожаловать в Zаядлый гробовщик"
+                FontAttributes="Bold" FontSize="30" TextColor="Red" BackgroundColor="LightGray"
+                HorizontalTextAlignment="Center" />
+
+        <Button Text="О компании" Clicked="OnAboutClicked" FontSize="16" BackgroundColor="Red" TextColor="White" FontAttributes="Bold,italic"/>
+        <Button Text="Каталог" Clicked="OnCatalogClicked" FontSize="16" BackgroundColor="Red" TextColor="White" FontAttributes="Bold,italic"/>
+        <Button Text="Профиль" Clicked="OnProfileClicked" FontSize="16" BackgroundColor="Red" TextColor="White" FontAttributes="Bold,italic"/>
+        <Button Text="Корзина" Clicked="OnCartClicked" FontSize="16" BackgroundColor="Red" TextColor="White" FontAttributes="Bold,italic"/>
+    </StackLayout>
+</ContentPage>

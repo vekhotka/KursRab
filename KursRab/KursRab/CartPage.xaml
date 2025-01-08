@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KursRab.CartPage">
+
+    <StackLayout Padding="10">
+        <Label Text="Корзина" FontSize="24" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" />
+
+        <StackLayout x:Name="ProductList">
+            
+            <StackLayout Orientation="Horizontal" Padding="5">
+                <Image Source="https://ритуальные-услуги-москва.рф/storage/products/681/normal/62fcd6bda2eed7.90604598.jpg" WidthRequest="50" HeightRequest="50" />
+                <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="5">
+                    <Label Text="Гроб детский (девочка)" FontSize="18" />
+                    <Label Text="Цена: 8990 руб." FontSize="16" TextColor="Red" />
+                </StackLayout>
+                <CheckBox x:Name="CheckBox1" CheckedChanged="OnCheckBoxCheckedChanged" />
+            </StackLayout>
+
+          
+            <StackLayout Orientation="Horizontal" Padding="5">
+                <Image Source="https://ритуальные-услуги-москва.рф/storage/products/611/normal/5f7dc5faee9c68.24210021.jpg" WidthRequest="50" HeightRequest="50" />
+                <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="5">
+                    <Label Text="Венок детский" FontSize="18" />
+                    <Label Text="Цена: 5600 руб." FontSize="16" TextColor="Red" />
+                </StackLayout>
+                <CheckBox x:Name="CheckBox2" CheckedChanged="OnCheckBoxCheckedChanged" />
+            </StackLayout>
+
+            
+            <StackLayout Orientation="Horizontal" Padding="5">
+                <Image Source="https://ритуальные-услуги-курск.рф/images/newcatalog/dets/1.webp" WidthRequest="50" HeightRequest="50" />
+                <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="5">
+                    <Label Text="Детский гроб (мальчик)" FontSize="18" />
+                    <Label Text="Цена: 9990 руб." FontSize="16" TextColor="Red" />
+                </StackLayout>
+                <CheckBox x:Name="CheckBox3" CheckedChanged="OnCheckBoxCheckedChanged" />
+            </StackLayout>
+
+            
+            <StackLayout Orientation="Horizontal" Padding="5">
+                <Image Source="https://imperia-granita.ru/upload/iblock/b70/b8g6biewau5pepmk8rr1cjfflkvmls85/mansurNeobrabot.jpg" WidthRequest="50" HeightRequest="50" />
+                <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="5">
+                    <Label Text="Двойное надгробие (детское)" FontSize="18" />
+                    <Label Text="Цена: 3600 руб." FontSize="16" TextColor="Red" />
+                </StackLayout>
+                <CheckBox x:Name="CheckBox4" CheckedChanged="OnCheckBoxCheckedChanged" />
+            </StackLayout>
+        </StackLayout>
+
+        <Label Text="Общая сумма:" FontSize="20" HorizontalOptions="Center" TextColor="Black" />
+        <Label x:Name="TotalAmountLabel" Text="0 руб." FontSize="24" HorizontalOptions="Center" TextColor="Green" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KursRab.AboutPage">
+
+    <StackLayout>
+        <Image Source="https://freelance.ru/img/portfolio/pics/00/2E/95/3053042.jpg" HeightRequest="240"/>
+        <Label Text="Мы предоставляем ритуальные услуги с заботой и уважением.В нашем каталоге вы найдете: живые и искусственные венки, корзины, гробы и текстиль, а также различные аксессуары и букеты."
+               FontSize="20" HorizontalTextAlignment ="Center" TextColor="Black" FontAttributes="Italic"
+               VerticalOptions="StartAndExpand" />
+        <Image Source="https://xn-----7kcbkbedjcd4axs4afdacghzgtqpkbq6y.xn--p1ai/wp-content/uploads/brigada-na-vynos.jpg" HeightRequest="260"/>
+        <Label Text="Каждый атрибут погребения создается по особой технологии с использованием материалов, установленных соотвествующими правилами."
+               FontSize="20" HorizontalTextAlignment ="Center" TextColor="Black" FontAttributes="Italic"
+               VerticalOptions="StartAndExpand" />
+    </StackLayout>
+</ContentPage>

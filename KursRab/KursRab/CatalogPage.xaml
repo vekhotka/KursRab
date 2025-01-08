@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace:KursRab"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KursRab.CatalogPage">
+
+    <ScrollView>
+        <StackLayout Padding="10" BackgroundColor="LightGray">
+            <Label Text="Гробы" FontSize="24" HorizontalOptions="Center" TextColor="Black" FontAttributes="Italic" />
+            <CarouselView x:Name="CoffinsCarousel" HeightRequest="265">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type local:CarouselItem}">
+                        <local:CarouselItem ImageSource="https://shop.ritual.ru/upload/resize_cache/iblock/81b/1200_1200_040cd750bba9870f18aada2478b24840a/grob_b_4_kombinirovannyy_full.png" Description="Гроб королевский" />
+                        <local:CarouselItem ImageSource="https://st23.stpulscen.ru/images/product/151/036/743_original.jpg" Description="Гроб-вентиляция" />
+                        <local:CarouselItem ImageSource="https://shop.ritual.ru/upload/iblock/7d6/grob_musulmanskiy_obityy_shelkovoy_tkanyu_full.png" Description="Гроб Мусульманский" />
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Image Source="{Binding ImageSource}" Aspect="AspectFill" HeightRequest="240" />
+                            <Label Text="{Binding Description}" HorizontalOptions="Center" TextColor="Black" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <Label Text="Венки" FontSize="24" HorizontalOptions="Center" TextColor="Black" FontAttributes="Italic" />
+            <CarouselView x:Name="WreathsCarousel" HeightRequest="415">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type local:CarouselItem}">
+                        <local:CarouselItem ImageSource="https://image.venokshop24.ru/images/products/1/2588/421120540/venok-trikolor-12.jpg" Description="Венок ''Патриот''" />
+                        <local:CarouselItem ImageSource="https://spbgorritual.ru/upload/iblock/4f7/VZHK.png" Description="Венок ''Честный Христианин''" />
+                        <local:CarouselItem ImageSource="https://kamnegradnn.ru/wp-content/uploads/2023/09/Arbuz-2.png" Description="Венок ''Барби''" />
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Image Source="{Binding ImageSource}" Aspect="AspectFill" HeightRequest="390" />
+                            <Label Text="{Binding Description}" HorizontalOptions="Center" TextColor="Black" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <Label Text="Урны" FontSize="24" HorizontalOptions="Center" TextColor="Black" FontAttributes="Italic" />
+            <CarouselView x:Name="UrnsCarousel" HeightRequest="405">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type local:CarouselItem}">
+                        <local:CarouselItem ImageSource="https://granitreal.ru/wp-content/uploads/media_147746367598851000.jpg" Description="Урна Склеп" />
+                        <local:CarouselItem ImageSource="https://funeral-ritual.ru/wp-content/uploads/2021/04/Urna-dlja-praha-HLCW-cw.jpg" Description="Урна Фешн" />
+                        <local:CarouselItem ImageSource="https://lentamk.ru/imgtmp/orign_100_w/data/5KBwJZfQV_Q.jpg" Description="Урна Богатая" />
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Image Source="{Binding ImageSource}" Aspect="AspectFill" HeightRequest="380" />
+                            <Label Text="{Binding Description}" HorizontalOptions="Center" TextColor="Black" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <Label Text="Памятники" FontSize="24" HorizontalOptions="Center" TextColor="Black" FontAttributes="Italic" />
+            <CarouselView x:Name="TombstonesCarousel" HeightRequest="375">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type local:CarouselItem}">
+                        <local:CarouselItem ImageSource="https://memorial66.ru/upload/pamyatniki/mramor/art_2.png" Description="Памятник Классика №5" />
+                        <local:CarouselItem ImageSource="https://pamyatniki-spb.ru/upload/iblock/728/728f52582a36748b45656ced53d78cbb.jpeg" Description="Памятник Православный" />
+                        <local:CarouselItem ImageSource="https://cs13.pikabu.ru/post_img/2024/04/06/4/1712376145139784024.jpg" Description="Памятник Важный Господин" />
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Image Source="{Binding ImageSource}" Aspect="AspectFill" HeightRequest="350" />
+                            <Label Text="{Binding Description}" HorizontalOptions="Center" TextColor="Black" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <Label Text="Сопутствующие товары" FontSize="24" HorizontalOptions="Center" TextColor="Black" FontAttributes="Italic" />
+            <CarouselView x:Name="AccesouarsCarousel" HeightRequest="375">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type local:CarouselItem}">
+                        <local:CarouselItem ImageSource="https://www.yartsevo.ru/uploads/posts/2021-09/1630600008_img_20210902_192337.jpg" Description="Свечи" />
+                        <local:CarouselItem ImageSource="https://png.pngtree.com/thumb_back/fw800/background/20230907/pngtree-two-red-carnations-isolated-on-white-background-image_13353113.jpg" Description="Гвоздика (2)" />
+                        <local:CarouselItem ImageSource="https://www.ritual-uvao.ru/images/stories/ODEJDA/kosinka/32.jpg" Description="Платок Черный Похоронный" />
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Image Source="{Binding ImageSource}" Aspect="AspectFill" HeightRequest="350" />
+                            <Label Text="{Binding Description}" HorizontalOptions="Center" TextColor="Black" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
